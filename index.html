@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video on Canvas</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #000;
+        }
+        canvas {
+            display: none;
+            border: 2px solid #fff;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Button for user interaction -->
+    <button id="startButton">Press Here to Start Video</button>
+    <!-- Video source -->
+    <video id="sourceVideo" src="./final_animated_video.mp4" preload="auto" style="display: none;"></video>
+    <!-- Canvas element for video playback -->
+    <canvas id="videoCanvas"></canvas>
+    <!-- JavaScript file -->
+    <script src="./script.js"></script>
+</body>
+</html>
